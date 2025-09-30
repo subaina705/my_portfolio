@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subaina Tehreem — Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Your compiled CSS -->
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <meta
+      name="description"
+      content="Portfolio of Subaina Tehreem — 3rd year CS student and developer."
+    />
+  </head>
+  <body>
+    <!--Nav -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <a
+            class="logo d-flex align-items-center gap-2 text-decoration-none"
+            href="#home"
+          >
+            <!-- <img
+              src="assets/images/logo.png.webp"
+              alt="Logo"
+              class="logo-img"
+            /> -->
+            <span class="logo-text">Subaina</span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="items d-none d-lg-block">
+            <ul class="m-0 p-0 d-flex gap-4">
+              <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+              <li>
+                <a class="nav-link scrollto" href="#projects">Projects</a>
+              </li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          
+          <button
+            class="btn btn-outline-dark d-lg-none"
+            id="mobileToggle"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list fs-3"></i>
+          </button>
+        </nav>
+
+       
+        <div class="mobile-menu d-lg-none" id="mobileMenu" hidden>
+          <ul class="list-unstyled mb-0">
+            <li><a class="nav-link scrollto" href="#home">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+            <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section-->
+      <section class="hero" id="home" aria-label="Hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <div class="hero-title">
+                <h6>This is me</h6>
+                <h1>Subaina Tehreem</h1>
+                <p>
+                  Future-ready developer, currently mastering the art of
+                  problem-solving.
+                </p>
+
+                <div class="d-flex gap-3 mt-4">
+                  <a
+                    href="assets/Subaina_Tehreem_Resume.pdf"
+                    class="btn btn-dark btn-lg"
+                    download
+                  >
+                    <i class="bi bi-download me-2"></i>Download CV
+                  </a>
+                  <a
+                    href="#projects"
+                    class="btn btn-outline-dark btn-lg scrollto"
+                  >
+                    <i class="bi bi-code-slash me-2"></i>View Projects
+                  </a>
+                </div>
+
+                <ul class="hero-badges mt-4">
+                  <li><i class="bi bi-mortarboard"></i> 3rd-year BSc CS</li>
+                  <li>
+                    <i class="bi bi-geo-alt"></i> Pakistan (Remote-friendly)
+                  </li>
+                  <li><i class="bi bi-envelope"></i> subainatehreem@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-lg-5">
+              <div class="hero-photo-wrap">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="Subaina profile photo"
+                  class="hero-photo"
+                />
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about" aria-label="About">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <h2>About Me</h2>
+              <p class="lead">
+                I’m a Computer Science student (3rd year) who loves building
+                real-world projects and tackling algorithmic challenges. I’ve
+                worked across the stack — from C/C++ and Java to
+                JavaScript/TypeScript and Python — and I enjoy clean code,
+                readable APIs, and robust systems.
+              </p>
+              <p>
+                Current interests: web apps, APIs, databases, and problem
+                solving with data structures and algorithms. Looking for
+                internships and open-source collaboration.
+              </p>
+
+              <div class="d-flex gap-3 mt-4 flex-wrap">
+                <a href="#contact" class="btn btn-primary scrollto"
+                  ><i class="bi bi-chat-left-text me-2"></i>Let’s Talk</a
+                >
+                <a
+                  href="https://github.com/yourusername"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="bi bi-github me-2"></i>GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yourusername/"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="bi bi-linkedin me-2"></i>LinkedIn
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="edu-card p-4 rounded-4">
+                <h5 class="mb-3">
+                  <i class="bi bi-journal-code me-2"></i>Education
+                </h5>
+                <ul class="timeline list-unstyled">
+                  <li>
+                    <span class="time">2023 — 2026 </span>
+                    <h6>BSc in Computer Science</h6>
+                    <p>
+                      Core: Data Structures & Algorithms, DBMS, OOP, Operating
+                      Systems, Computer Networks.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="time">2021 — 2023</span>
+                    <h6>Intermediate (ICS)</h6>
+                    <p>Mathematics, Statistics and foundational programming.</p>
+                  </li>
+                </ul>
+
+                <h5 class="mt-4 mb-3">
+                  <i class="bi bi-award me-2"></i>Highlights
+                </h5>
+                <ul class="mb-0">
+                  <li>Leetcode/HackerRank practice — 200+ problems solved</li>
+                  <li>Hackathon finalist (University level)</li>
+                  <li>Open-source contributions to small frontend utilities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills" aria-label="Skills">
+        <div class="wrapper">
+          <div class="container">
+            <h2 class="section-title">Skills & Tools</h2>
+
+            <div class="row g-4 mt-1">
+              <!-- Languages -->
+              <div class="col-md-6">
+                <div class="skill-card p-4 rounded-4 h-100">
+                  <h5 class="mb-3">
+                    <i class="bi bi-translate me-2"></i>Programming Languages
+                  </h5>
+                  <ul class="tag-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <div class="mt-3">
+                    <div class="skill-line">
+                      <span>Data Structures & Algorithms</span>
+                      <div class="bar"><i style="width: 80%"></i></div>
+                    </div>
+                    <div class="skill-line">
+                      <span>OOP</span>
+                      <div class="bar"><i style="width: 85%"></i></div>
+                    </div>
+                    <div class="skill-line">
+                      <span>Problem Solving</span>
+                      <div class="bar"><i style="width: 78%"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Web / Tools -->
+              <div class="col-md-6">
+                <div class="skill-card p-4 rounded-4 h-100">
+                  <h5 class="mb-3">
+                    <i class="bi bi-tools me-2"></i>Web & Tools
+                  </h5>
+                  <ul class="tag-list">
+                    <li>Bootstrap</li>
+                    <li>Git & GitHub</li>
+                    <li>REST APIs</li>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                    <li>Linux/Bash</li>
+                    <li>Figma (basic)</li>
+                  </ul>
+                  <div class="mt-3">
+                    <div class="skill-line">
+                      <span>Frontend</span>
+                      <div class="bar"><i style="width: 70%"></i></div>
+                    </div>
+                    <div class="skill-line">
+                      <span>Backend</span>
+                      <div class="bar"><i style="width: 60%"></i></div>
+                    </div>
+                    <div class="skill-line">
+                      <span>Databases</span>
+                      <div class="bar"><i style="width: 72%"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick badges -->
+            <div class="mt-4">
+              <ul class="stack-badges">
+                <li><i class="bi bi-filetype-java"></i> Java</li>
+                <li><i class="bi bi-braces"></i> C/C++</li>
+                <li><i class="bi bi-filetype-py"></i> Python</li>
+                <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+                <li><i class="bi bi-database"></i> SQL</li>
+                <li><i class="bi bi-bootstrap"></i> Bootstrap</li>
+                <li><i class="bi bi-git"></i> Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects" aria-label="Projects">
+        <div class="container">
+          <div
+            class="d-flex align-items-end justify-content-between flex-wrap gap-3"
+          >
+            <h2 class="section-title mb-0">Projects</h2>
+            <!-- <div
+              class="filters btn-group"
+              role="group"
+              aria-label="Project filters"
+            >
+              <button class="btn btn-outline-dark active" data-filter="all">
+                All
+              </button>
+              <button class="btn btn-outline-dark" data-filter="web">
+                Web
+              </button>
+              <button class="btn btn-outline-dark" data-filter="cpp">
+                C/C++
+              </button>
+              <button class="btn btn-outline-dark" data-filter="java">
+                Java
+              </button>
+              <button class="btn btn-outline-dark" data-filter="python">
+                Python
+              </button>
+            </div> -->
+          </div>
+
+          <div class="row g-4 mt-2" id="projectGrid">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="web">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/dashboard.png"
+                  class="card-img-top"
+                  alt="Taskly app screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Admin Dashboard</h5>
+                  <p class="card-text small">HTML, CSS, JS, LocalStorage</p>
+                  <p class="card-text">
+                    A simple but polished admin dashboard to keep track of food due dates,
+                    and persistence.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="https://gudfud.netlify.app/"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-box-arrow-up-right me-1"></i>Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/taskly"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="cpp">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/projects/dsa.jpg"
+                  class="card-img-top"
+                  alt="DSA visualizer screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">DSA Playground</h5>
+                  <p class="card-text small">C++ (STL), OOP</p>
+                  <p class="card-text">
+                    Implementations of classic data structures & algorithms with
+                    unit tests and benchmarks.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-sm disabled"
+                      aria-disabled="true"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/dsa-playground"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="java">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/projects/library.jpg"
+                  class="card-img-top"
+                  alt="Library manager screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Library Manager</h5>
+                  <p class="card-text small">Java, JDBC, MySQL</p>
+                  <p class="card-text">
+                    Desktop CRUD app with search, pagination, and role-based
+                    access.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-sm disabled"
+                      aria-disabled="true"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/library-manager"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="python">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/expert.png"
+                  class="card-img-top"
+                  alt="Sentiment analyzer screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Expert-Service Provider</h5>
+                  <p class="card-text small">HTML,CSS,JavaScript</p>
+                  <p class="card-text">
+                    Simple website that povides it service with a web UI for classifying text
+                    sentiment.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="https://experrt.netlify.app/"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/sentiment-analyzer"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="web">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/protfolio.png"
+                  class="card-img-top"
+                  alt="Portfolio site screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Starter</h5>
+                  <p class="card-text small">HTML, SCSS, Bootstrap</p>
+                  <p class="card-text">
+                    Accessible, responsive starter with SCSS and smooth
+                    scrolling.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="https://yourdemo.com/portfolio"
+                      class="btn btn-primary btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/portfolio-starter"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4 project-card" data-type="cpp">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="assets/images/imagine.png"
+                  class="card-img-top"
+                  alt="OS scheduler screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Imagine</h5>
+                  <p class="card-text small">C, C++</p>
+                  <p class="card-text">
+                    FCFS, SJF, Round-Robin simulation with Gantt chart output.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-sm disabled"
+                      aria-disabled="true"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/yourusername/cpu-scheduler-sim"
+                      class="btn btn-outline-dark btn-sm"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github me-1"></i>Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <h2 class="section-title">Contact</h2>
+              <p class="mb-4">
+                For internships, freelance work, or collaboration, drop a
+                message. I typically reply within 24 hours.
+              </p>
+
+              <div class="contact-cards">
+                <a class="contact-card" href="mailto:subainatehreem@gmail.com"
+                  ><i class="bi bi-envelope"></i> subaina@example.com</a
+                >
+                <a
+                  class="contact-card"
+                  href="https://github.com/subaina705"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-github"></i> github.com/yourusername</a
+                >
+                <a
+                  class="contact-card"
+                  href="https://www.linkedin.com/in/yourusername/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="bi bi-linkedin"></i>
+                  linkedin.com/in/yourusername</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form class="contact-form needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please write a short message.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-dark btn-lg">
+                      <i class="bi bi-send me-2"></i>Send Message
+                    </button>
+                    <small class="text-muted d-block mt-2"
+                      >This demo posts nowhere — wire to your backend or
+                      Formspree/Netlify later.</small
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <p class="m-0">
+          &copy; <span id="year"></span> Subaina Tehreem. All rights reserved.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="#home" class="scrollto"
+            >Back to top <i class="bi bi-arrow-up"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
