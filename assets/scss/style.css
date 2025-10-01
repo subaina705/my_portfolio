@@ -305,6 +305,13 @@ body {
   border-radius: 1.2rem;
   overflow: hidden;
 }
+.projects .card:hover {
+  
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  
+}
 .projects .card .card-img-top {
   height: 180px;
   object-fit: cover;
