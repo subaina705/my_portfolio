@@ -220,24 +220,24 @@ body {
     left: 0;
     width: 100%;
     height: 120px;
-    background: $bg-rose;
+    background: #000000e0;
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
   }
 }
 
-// ========================
-// About
-// ========================
+
 .about {
-  background: $bg-rose;
+  background: #000000e0;
   padding: 100px 0;
   position: relative;
   h2 {
     margin-bottom: 1rem;
+    color: white;
   }
   p.lead {
-    color: #333;
-  }
+    color: white;
+  } 
+
 
   .edu-card {
     background: #fff;
@@ -276,7 +276,7 @@ body {
     top: 100%;
     width: 100%;
     height: 120px;
-    background: $bg-rose;
+    background: #000000e0;
     clip-path: polygon(0 0, 100% 0, 25% 100%);
   }
 }
@@ -352,9 +352,7 @@ body {
   }
 }
 
-// ========================
-// Projects
-// ========================
+
 .projects {
   padding: 120px 0;
   background: #fff;
@@ -371,6 +369,10 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: $card-radius;
     overflow: hidden;
+    &:hover{
+      transform:translateY(-10px);
+      transition: transform 0.3s ease-in;
+    }
     .card-img-top {
       height: 180px;
       object-fit: cover;
